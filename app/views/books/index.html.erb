@@ -24,7 +24,7 @@
 
 <h2>New Book</h2>
 <% if @book.errors.any? %>
-  <%= @book.errors.count %>件のエラーが発生しました
+  <%= @book.errors.count %>件のerrorが発生しました
   <ul>
     <% @book.errors.full_messages.each do |message| %>
       <li><%= message %></li>
@@ -43,6 +43,6 @@
  <%= f.text_area :body %>
  
  <div class="actions"></div>
- <%= f.submit 'Creat Book' %>
+ <%= f.submit 'Create Book' %>
 <% end %>
 
